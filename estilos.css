@@ -1,0 +1,114 @@
+
+/* Las variables de CSS se crean en la "raiz" del documento */
+
+:root{
+	--negro: #29272a;
+	--negroVerdadero; #000;
+	--blanco: #FFF;
+	--naranja: #f69c21;
+	--naranjaBotonera: #fe6e0d;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	background-color: var(--negro);
+	background-image: url("images/pattern.jpg");
+	
+	/*Aplico la fuente general en la etiqueta body para aprovechar la herencia*/
+	
+	font-family: arial, sans-serif;
+	
+	
+}
+
+.cabecera{
+	/* background-color: red; */
+	
+	display: flex;
+	/* Los separa en horizontal */
+	justify-content: space-between;
+	/* los centra en vertical */
+	align-items: center;
+	
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 16px;
+	margin-bottom: 24px;
+	
+}
+
+h1{
+	color: var(--naranja);
+}
+
+.contenedor{
+	background-color: var(--blanco);
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+
+/*
+
+				SECCION BOTONERA
+				
+				
+*/
+
+
+.botonera{
+	background-color: var(--naranjaBotonera);
+	padding-left: 15 px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	
+	
+	
+}
+
+.botonera-lista{
+	
+	display: flex;
+	list-style-type: none;
+	max-width: 1000px;
+		
+}
+
+.botonera-lista li{
+	flex-grow: 1;
+	
+}
+
+.botonera a{
+	background-color: var(--naranjaBotonera);
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	border-right: 1px solid white;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	
+}
+
+a.sin-borde{
+	border-right: none; 
+}
+
+.botonera a:hover{
+	
+}
+
+
+
+
+
+
